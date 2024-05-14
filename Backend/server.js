@@ -5,10 +5,9 @@ const app = express();
 
 // Connect to MongoDB (replace YOUR_MONGODB_URI with your actual MongoDB URI)
 mongoose
-  .connect("mongodb://localhost:27017", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(
+    "mongodb+srv://abdullahbinrafique945:sF37JBI2Lnp2TCFp@cluster0.onavzhy.mongodb.net/demo-sapp?retryWrites=true&w=majority&appName=Cluster0"
+  )
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log(err));
 
